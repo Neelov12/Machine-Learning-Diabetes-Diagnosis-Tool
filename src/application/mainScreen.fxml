@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" style="-fx-background-image: url('file:///Users/neelov12/eclipse-workspace/MAT422_FinalProj_Diabetes_Prediction_Log_Regression/src/application/7084EB3A-EB19-4EB2-B556-E0935AC1D5AE_1_201_a.jpeg');" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mainScreenController">
+   <children>
+      <VBox layoutX="391.0" layoutY="101.0" prefHeight="317.0" prefWidth="188.0">
+         <children>
+            <Label text="Pregnancies" />
+            <TextField fx:id="pregnancies" prefHeight="21.0" prefWidth="200.0" />
+            <Label text="Glucose" />
+            <TextField fx:id="glucose" prefHeight="21.0" prefWidth="200.0" />
+            <Label text="Blood Pressure  (mm Hg)" />
+            <TextField fx:id="bp" prefHeight="21.0" prefWidth="200.0" />
+            <Label text="Skin Thickness (mm)" />
+            <TextField fx:id="skinthickness" prefHeight="21.0" prefWidth="200.0" />
+            <Label text="Insulin (mu U/ml)" />
+            <TextField fx:id="insulin" prefHeight="21.0" prefWidth="200.0" />
+            <Label text="BMI (kg/m^2)" />
+            <TextField fx:id="bmi" prefHeight="21.0" prefWidth="200.0" />
+            <Label text="Diabetes Pedigree Function" />
+            <TextField fx:id="dpf" prefHeight="21.0" prefWidth="200.0" />
+            <Label text="Age" />
+            <TextField fx:id="age" prefHeight="21.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+      <Label layoutX="332.0" layoutY="46.0" text="Diabetes Prediction Calculator">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="calculateButton" layoutX="440.0" layoutY="484.0" mnemonicParsing="false" onAction="#calculate" onMouseEntered="#CalcButtonEntered" onMouseExited="#CalcButtonExited" prefHeight="28.0" prefWidth="80.0" style="-fx-background-color: #4169E1; -fx-background-radius: 25;" text="Calculate" textFill="WHITE" />
+      <Label fx:id="warningMessage" layoutX="381.0" layoutY="518.0" prefHeight="17.0" prefWidth="279.0" textFill="RED" />
+      <Label fx:id="output" layoutX="455.0" layoutY="449.0" prefHeight="28.0" prefWidth="114.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
